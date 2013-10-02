@@ -13,7 +13,6 @@ class Spinach::Features::RegisteringAccount < Spinach::FeatureSteps
   end
 
   step 'I should land on my profile page' do
-    current_path.should eql '/profile'
-    #assert_equals current_path, '/profile'
+    assert_equal '/profile', current_path
   end
 end
