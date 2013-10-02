@@ -1,0 +1,7 @@
+ <%= form_for(@user) do |f| %>
+   <fieldset>
+     <%= f.label :email, 'email' %>
+     <%= f.text_field :email %>
+     <%= f.submit 'register' %>
+   </fieldset>
+ <% end %>
